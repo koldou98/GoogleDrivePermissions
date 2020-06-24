@@ -24,7 +24,7 @@ Link: [https://gradle.org/releases/](https://gradle.org/releases/)
 FlatLaf 0.26 ha sido el look and feel utilizado.\
 Link: [https://github.com/JFormDesigner/FlatLaf](https://github.com/JFormDesigner/FlatLaf)
 ### Motor de base de datos
-H2 ha sido la base de datos utilizada. Para el desarrollo se utiliza una base de datos embebida, mientras que para las pruebas unitarias una base de datos en memoria.\ 
+H2 ha sido la base de datos utilizada. Para el desarrollo se utiliza una base de datos embebida, mientras que para las pruebas unitarias una base de datos en memoria.\
 Link: [https://github.com/h2database/h2database](https://github.com/h2database/h2database)
 ### Motor de persistencia 
 Hibernate 5.4.\
