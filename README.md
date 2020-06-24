@@ -11,6 +11,8 @@ Herramienta para la gestión de permisos en Google Drive.
 - Configurar el usuario y contraseña de la base de datos, src/main/resources/META-INF/persistence.xml. Estos usuarios por defecto son user y pass.
 - Ejecutar `gradle run` en la el directorio donde se encuentra el proyecto.
 
+## Javadoc
+El javadoc del proyecto se encuentra en la página asociada a este proyecto: [https://koldou98.github.io/GoogleDrivePermissions/](https://koldou98.github.io/GoogleDrivePermissions/)
 ## Información adicional
 ### Versión de Java utilizada
 Java 1.8.0_251 [https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html](https://www.oracle.com/java/technologies/javase/javase-jdk8-downloads.html)
