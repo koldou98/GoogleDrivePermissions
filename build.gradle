@@ -1,0 +1,51 @@
+plugins {
+    id 'com.github.johnrengelman.shadow' version '5.2.0'
+    id 'java'
+}
+
+
+apply plugin: 'java'
+apply plugin: 'application'
+
+group 'main.java'
+version '1.0-SNAPSHOT'
+
+mainClassName = 'gui.JMain'
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+    compileJava.options.encoding = 'UTF-8'
+}
+
+
+version = '1.0'
+
+repositories {
+    mavenCentral()
+    maven {
+        url "https://nexus.talanlabs.com/content/repositories/releases/"
+    }
+
+}
+dependencies {
+    testImplementation 'junit:junit:4.12'
+    implementation 'com.google.api-client:google-api-client:1.30.5'
+    implementation 'com.google.oauth-client:google-oauth-client-jetty:1.30.5'
+    implementation 'com.google.apis:google-api-services-drive:v3-rev188-1.25.0'
+    implementation 'com.formdev:flatlaf:0.26' //LaF
+
+    //BBDD
+    implementation 'org.hibernate:hibernate-core:5.4.12.Final' //Modulo para JPA
+    implementation 'org.hibernate:hibernate-entitymanager:5.4.12.Final' //Modulo para gestionar entidades con el JPA
+    implementation 'javax.persistence:javax.persistence-api:2.2'
+    //Si se esta utilizando JavaEE no hace falta. Sino para persistencia
+    implementation 'com.h2database:h2:1.4.200' //Controlador de BBDD que se va a utilizar
+
+}
+shadowJar {
+    manifest {
+        attributes(
+                "Main-Class": mainClassName
+        )
+    }
+}
